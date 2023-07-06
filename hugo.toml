@@ -15,3 +15,9 @@ background_color_class=""
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/wangjm10"
+
+[[menu.main]]
+identifier = "aboutme"
+name = "About Me"
+url = "/blog/about-me/"
+weight = 5

@@ -6,6 +6,7 @@ theme = 'ananke'
 author = "Jiamin"
 favicon= "img/favicon.ico"
 background_color_class=""
+github="mggger"
 
 [sitemap]
   changefreq = "daily"  # Sitemap 中页面的更改频率

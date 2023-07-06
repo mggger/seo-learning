@@ -1,0 +1,26 @@
+name: Hugo Build and Deploy
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if not 'main'
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: hugo
+
+    - name: Replace public directory
+      run: |
+        sudo rm -rf /var/www/public
+        sudo mkdir -p /var/www/public
+        sudo cp -r public/* /var/www/public
+
+    - name: Restart Nginx
+      run: nginx -s reload

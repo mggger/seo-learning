@@ -8,8 +8,6 @@ images:
 - /img/anki-main.png
 ---
 
-# Creating Anki Cards using ChatGPT-based Chrome Extension
-
 The vast expanse of the internet serves us with nuggets of valuable information every day. But how do we effectively organize and memorize this fragmented information? One solution is the memory software, Anki, which uses the method of spaced repetition to aid our recall. However, the process of creating Anki cards can be quite time-consuming. To tackle this, we have developed a Chrome extension tool based on ChatGPT, aiding you in quickly and efficiently creating Anki cards.
 
 The inception of this Chrome extension tool lies in two essential needs:

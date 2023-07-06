@@ -1,9 +1,9 @@
 baseURL = 'http://mggg.cloud/'
 languageCode = 'en-us'
-title = 'Digital Nomad'
+title = "Jiamin's Blog"
 theme = 'ananke'
 [params]
-author = "GptWang"
+author = "Jiamin"
 favicon= "img/favicon.ico"
 background_color_class=""
 

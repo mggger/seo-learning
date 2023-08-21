@@ -1,5 +1,4 @@
 baseURL = 'http://mggg.cloud/'
-languageCode = 'en-us'
 title = "Jiamin's Blog"
 theme = 'ananke'
 [params]
@@ -7,6 +6,10 @@ author = "Jiamin"
 favicon= "img/favicon.ico"
 background_color_class=""
 github="https://github.com/mggger"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
 
 [sitemap]
   changefreq = "daily"  # Sitemap 中页面的更改频率
@@ -20,5 +23,15 @@ url = "https://twitter.com/wangjm10"
 [[menu.main]]
 identifier = "aboutme"
 name = "About Me"
-url = "/blog/about-me/"
-weight = 5
+url = "/en/about-me/"
+weight = 1
+
+[[menu.main]]
+  name = "English"
+  url = "/en/"
+  weight = 2
+
+[[menu.main]]
+  name = "中文"
+  url = "/zh/"
+  weight = 3

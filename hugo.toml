@@ -27,11 +27,17 @@ url = "/en/about-me/"
 weight = 1
 
 [[menu.main]]
+  name = "Links"
+  url = "/friends"
+  weight = 0
+
+[[menu.main]]
   name = "English"
   url = "/en/"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "中文"
   url = "/zh/"
-  weight = 3
+  weight = 4
+

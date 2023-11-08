@@ -48,6 +48,17 @@ response = openai.ChatCompletion.create(
 print(response.choices[0].message.content)
 ```
 
+**output:**
+```md
+The image appears to show a candlestick chart for a stock, specifically ticker 'BABA' which is Alibaba Group Holding Limited. Candlestick charts are commonly used in stock trading to show price movements over time, with each candle representing the trading activity for a specific period.
+Each candle shows the opening price, closing price, and price fluctuations within the period it represents. A candle is filled or colored if the closing price is below the opening price (indicating a decrease in price), and it is usually white or hollow if the closing price is above the opening price (indicating an increase in price). The 'wick' or 'shadow' extending from the top or bottom of each candle indicates the high and low prices reached during the period.
+Additionally, the chart has moving averages overlaid on it, with different time periods indicated by different colored lines:\n\n- The 5-day moving average (5MA) is the purple line.
+- The 10-day moving average (10MA) is the orange line.
+- The 20-day moving average (20MA) is the green line.
+- The 30-day moving average (30MA) is the red line.
+These moving averages smooth out price data by creating a single flowing line and provide insight into the direction of the trend. The chart indicates the moving averages are trending downwards during this period, suggesting that there was a general downtrend in the stock's price. However, near the end of the visible timeline, it appears the trend might be
+```
+
 ## JSON模式
 另一个值得注意的功能是 JSON 模式，它限制模型只生成有效的 JSON 输出。这对于需要将 AI 生成的内容集成到需要结构化数据的应用程序中的开发人员特别有用。
 
@@ -84,6 +95,11 @@ user_data = json.loads(output)
 print(user_data)
 ```
 
+**output:**
+```md
+{'name': 'wang', 'age': 12}
+```
+
 
 ## System Fingerprint
 
@@ -114,4 +130,9 @@ response = openai.ChatCompletion.create(
 )
 
 print(response['system_fingerprint'])
+```
+
+**output:**
+```md
+'fp_eeff13170a'
 ```

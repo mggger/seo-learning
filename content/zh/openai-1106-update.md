@@ -19,7 +19,7 @@ keywords: ["OpenAI updates", "GPT-4 Vision", "chatgpt JSON mode", "chatgpt syste
 
 OpenAI 引入的最令人兴奋的新功能之一是多模态模型，它可以处理文本和图像的组合。这一能力为 AI 应用打开了一个新的维度，从增强的视觉数据分析到更互动的聊天机器人。
 ### GPT-4 Vision: gpt-4-vision-preview
-示例: 分析阿里巴巴股票的 K 线（蜡烛图）。 有了新的多模态模型，您可以简单地提供图表的图像以及您的文本查询。
+示例: 分析阿里巴巴股票的K线.
 
 ![alibaba](https://mggg.cloud/img/ali.png)
 

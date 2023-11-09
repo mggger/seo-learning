@@ -42,7 +42,7 @@ services:
 First, we establish a connection to the Weaviate vector database:
 
 ```shell
-pip install weaviate
+pip install weaviate-client
 ```
 
 ```python

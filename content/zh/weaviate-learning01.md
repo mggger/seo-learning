@@ -46,7 +46,7 @@ services:
 
 
 ```shell
-pip install weaviate
+pip install weaviate-client
 ```
 
 ```python

@@ -9,7 +9,7 @@ tags: ["LangChain", "AI"]
 
 # Langchain LLM Streaming 
 
-lang chain通过``callback``机制，可以将LLM输出的token实时处理
+langchain通过``callback``机制，可以将LLM输出的token实时处理
 
 ```python
 from langchain.chat_models import ChatOpenAI

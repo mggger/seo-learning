@@ -13,7 +13,7 @@ keywords: ["Cloudflare", "AI应用", "免费", "Cloudflare Worker", "Cloudflare 
 
 # 构建0成本的AI应用：利用Cloudflare的强大功能
 
-在当前的技术环境中，利用Cloudflare的免费套餐（Free Plan）可以轻松构建零成本的AI应用。这篇文章将指导您如何仅通过使用JavaScript和Cloudflare的几个关键服务——Cloudflare AI, Cloudflare Worker, 和 Cloudflare Page——来实现这一目标。其中，Cloudflare Worker充当后端服务，而Cloudflare Page则扮演前端的角色。
+在当前的技术环境中，利用Cloudflare的免费套餐（Free Plan）可以轻松构建零成本的AI应用。仅通过使用JavaScript和Cloudflare的几个关键服务——Cloudflare AI, Cloudflare Worker, 和 Cloudflare Page——来实现这一目标。其中，Cloudflare Worker充当后端服务，而Cloudflare Page则扮演前端的角色。
 
 
 
@@ -44,7 +44,7 @@ Cloudflare AI目前免费支持多种模型
 
 
 
-您可以通过以下命令行示例，结合前面获取的`ACCOUNT_ID`和`API_TOKEN`，快速测试这些模型：
+可以通过以下命令行示例，结合前面获取的`ACCOUNT_ID`和`API_TOKEN`，快速测试这些模型：
 
 ```shell
 curl -X POST \
@@ -110,14 +110,14 @@ async function handleChatGPTRequest(request) {
 
 1. 将此脚本上传到Cloudflare Worker。
 2. 在Worker设置中（Settings -> Variables），配置`ACCOUNT_ID`和`BEARER_TOKEN`。
-3. 测试您的Worker：点击Quick Edit，直接利用Cloudflare的内置功能进行测试。
+3. 测试Worker：点击Quick Edit，直接利用Cloudflare的内置功能进行测试。
 
 ![clodu](/img/cloudflare.png)
 
 
 ## Cloudflare Page：前端界面
 
-Cloudflare Page作为前端，负责页面构建和用户交互。您可以根据个人审美设计AI应用界面，并且可以将其与GitHub项目直接关联。更多信息请参考 [Cloudflare Pages入门指南](https://developers.cloudflare.com/pages/get-started/guide/)。
+Cloudflare Page作为前端，负责页面构建和用户交互。你可以根据个人审美设计AI应用界面，并且可以将其与GitHub项目直接关联。更多信息请参考 [Cloudflare Pages入门指南](https://developers.cloudflare.com/pages/get-started/guide/)。
 
 
 

@@ -24,12 +24,12 @@ url = "https://twitter.com/wangjm10"
 identifier = "aboutme"
 name = "About Me"
 url = "/en/about-me/"
-weight = 1
+weight = 2
 
 [[menu.main]]
   name = "Links"
   url = "/friends"
-  weight = 0
+  weight = 5
 
 [[menu.main]]
   name = "English"
@@ -41,3 +41,7 @@ weight = 1
   url = "/zh/"
   weight = 4
 
+[[menu.main]]
+  name = "Free AI"
+  url = "https://freechat.mggg.cloud/"
+  weight = 1

@@ -42,6 +42,6 @@ weight = 2
   weight = 4
 
 [[menu.main]]
-  name = "Free AI"
+  name = "Try Free AI"
   url = "https://freechat.mggg.cloud/"
   weight = 1

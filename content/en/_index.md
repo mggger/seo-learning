@@ -1,5 +1,5 @@
 ---
-title: "Jiamin's Blog"
+title: "mggg's Blog"
 date: 2023-08-21
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Jiamin's 博客"
+title: "mggg's 博客"
 date: 2023-08-21
 draft: false
 ---

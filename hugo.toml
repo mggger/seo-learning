@@ -1,8 +1,8 @@
 baseURL = 'http://mggg.cloud/'
-title = "Jiamin's Blog"
+title = "mggg's Blog"
 theme = 'ananke'
 [params]
-author = "Jiamin"
+author = "mggg"
 favicon= "img/favicon.ico"
 background_color_class=""
 github="https://github.com/mggger"

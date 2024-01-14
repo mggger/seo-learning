@@ -18,6 +18,12 @@
               <a id="try-free-ai" class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
                 Try Free AI
               </a>
+
+            {{ else if eq .Name "GPTs" }}
+            <a id="GPTs" class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                GPTs
+            </a>
+
             {{ else }}
               <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
                 {{ .Name }}

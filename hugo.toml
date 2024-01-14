@@ -45,3 +45,8 @@ weight = 2
   name = "Try Free AI"
   url = "https://freechat.mggg.cloud/"
   weight = 1
+
+[[menu.main]]
+  name = "GPTs"
+  url = "https://gpts.mggg.cloud/"
+  weight = 0

@@ -1,0 +1,12 @@
+{{- $pages := .Pages -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range $pages }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+    <changefreq>{{ if .Params.sitemap.changefreq }}{{ .Params.sitemap.changefreq }}{{ else }}daily{{ end }}</changefreq>
+    <priority>{{ if .Params.sitemap.priority }}{{ .Params.sitemap.priority }}{{ else }}0.5{{ end }}</priority>
+    <description>{{ .Description }}</description> <!-- 添加这行来显示描述 -->
+  </url>
+  {{- end }}
+</urlset>

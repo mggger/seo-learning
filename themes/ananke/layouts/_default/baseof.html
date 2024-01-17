@@ -36,7 +36,31 @@
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+
+    {{ if .Params.faq }}
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {{ range $index, $faq := .Params.faq }}
+            {
+              "@type": "Question",
+              "name": "{{ $faq.question }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ $faq.answer | safeHTML }}"
+              }
+            }{{ if ne $index (sub (len $.Params.faq) 1) }},{{ end }}
+            {{ end }}
+          ]
+        }
+    </script>
+    {{ end }}
+
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
+
+
   </head>
 
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">

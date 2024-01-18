@@ -1,17 +1,27 @@
 ---
-title: "基于LangChain向量数据库，为LLM添加实时的领域知识"
+title: "利用LangChain向量数据库加强LLM实时领域知识"
 date: 2023-08-28
 draft: false
-description: "通过LangChain和Chroma向量数据库，为LLM模型添加实时领域知识，提升其响应准确性和实用性。"
+description: "通过LangChain和Chroma向量数据库，加强LLM模型的实时领域知识，提高其响应的准确性和实用性。"
 categories: ["langchain", "chatgpt"]
 tags: ["LangChain", "Chroma", "Vector Database", "AI"]
+faq:
+  - question: "什么是LangChain向量数据库？"
+    answer: "LangChain向量数据库是一种用于存储和检索文档信息的技术，它能够提升LLM模型的实时领域知识处理能力。"
+  - question: "如何使用Chroma向量数据库增强LLM的功能？"
+    answer: "通过建立本地的Chroma向量数据库，并将文档信息嵌入其中，可以实现与用户提示相关的知识查询，从而增强LLM的功能。"
+  - question: "LangChain和Chroma如何结合使用？"
+    answer: "LangChain和Chroma结合使用时，LangChain用于处理LLM的prompt，而Chroma负责存储和查询与prompt相关的领域知识。"
 ---
 
 
 
-# 基于langchain向量数据库,  为LLM添加最新的领域知识
+# 利用LangChain向量数据库提升LLM的即时知识处理能力
 
-在我们使用的chatgpt的时候，往往会遇到一些提示：
+![langchain_chroma](/img/langchain_chroma.png)
+
+当我们使用[ChatGPT](/categories/chatgpt/)，它常常提示我们其知识只更新到了2021年9月。因此，为了使LLM模型能够处理最新的信息，将实时的知识集成到模型中变得至关重要。
+
 
 ```
 截止到2021年9月的训练数据。
@@ -20,27 +30,20 @@ tags: ["LangChain", "Chroma", "Vector Database", "AI"]
 ```
 
 
+## 实现步骤
 
-因此，为了让LLM模型具备实时的领域知识，将实时的信息添加到模型中变得非常必要。接下来，我们将介绍如何通过LangChain和Chroma向量数据库，为ChatGPT添加最新的领域知识。
+### 1. 建立本地向量数据库
+我们首先需要在本地创建一个[Chroma向量数据库](http://mggg.cloud/tags/chroma/)，并将文档信息嵌入其中。
 
+### 2. 查询与用户提示相关的知识
+接着，基于用户的提示，我们查询向量数据库，从中检索出相关领域的知识。
 
+### 3. 将领域知识集成到用户提示中
+最后，我们将这些领域知识整合到用户的提示中，以供LLM模型使用。
 
-步骤如下:
+## LangChain + Chroma的应用
 
-1. 训练文档知识，存到本地向量数据库chroma
-2. 根据用户prompt去查询向量数据库， 根据相似度获取相似领域知识
-3. 包装领域知识到prompt中
-
-
-
-## LangChain + Chroma
-
-1. 将文档知识嵌入并存储到本地向量数据库Chroma中。
-2. 根据用户的提示查询向量数据库，获取相似领域知识。
-
-
-
-代码如下， 我们通过 ``add_text_embedding``来解析文本为向量， 通过``query``来查询相似度的领域知识
+下面是LangChain和Chroma的一个示例应用。我们通过`add_text_embedding`将文本解析为向量，并通过`query`查询领域知识。
 
 ```python
 from langchain.embeddings import OpenAIEmbeddings
@@ -77,14 +80,19 @@ class EmbeddingLocalBackend(object):
 
 
 
-## 为prompt添加领域知识
+## 优化LLM的prompt处理
 
-以一个Azure 问答机器人为例, prompt pipeline设置可以为:
 
-1. 用户提问prompt
-2. 搜索prompt,   并在向量数据库进行查询,  获取相似知识
-3. 拼接成完整的prompt,  传给LLM
+以一个Azure问答机器人为例，我们设置了如下的prompt流程：
 
+1. 用户提问
+用户提出的问题是prompt的起点。
+
+2. 搜索并查询向量数据库
+在[向量数据库](/tags/vector-database/)中查询与prompt相关的知识。
+
+3. 组装完整的prompt
+最后，我们将查询到的知识和用户的原始问题结合起来，形成一个完整的prompt。
 
 
 System Message(替换{quesion} 为用户的提问):
@@ -148,4 +156,5 @@ llm = ChatOpenAI(
 print(llm(messages))
 ```
 
-   
+## 结论
+通过以上步骤，我们能够为LLM模型提供最新的领域知识，提高其响应的准确性和实用性。更多关于[LangChain](/categories/langchain/)和Chroma的信息，可以访问我们的相关文章。

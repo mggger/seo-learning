@@ -6,9 +6,9 @@ language: zh
 description: 很高兴认识你们, mggg!
 categories: []
 tags: ["mggg"]
-keywords: ["mggg", "mggg means", "means", "mggg", "mggg", "mggg means", "mggg means", "mggg means"]
+keywords: ["mggg", "mggg meaning", "meaning", "mggg", "mggg", "mggg meaning", "mggg meaning", "mggg meaning"]
 faq:
-  - question: "What does mggg means?"
+  - question: "mggg meaning"
     answer: "It's a Dota nickname that I've used for gaming and have continued to use professionally. The name mggg symbolizes the blend of my personal interest in gaming and my professional career in Big Data engineering."
 ---
 

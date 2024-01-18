@@ -5,6 +5,15 @@ draft: false
 description: "Discover how to boost LLM models with up-to-the-minute domain knowledge using the advanced LangChain Chroma vector database technology."
 categories: ["langchain", "chatgpt"]
 tags: ["LangChain Chroma", "Vector Database", "AI", "Real-Time Knowledge", "LangChain"]
+faq:
+  - question: "What is the role of LangChain Chroma in enhancing LLM models like ChatGPT?"
+    answer: "LangChain Chroma is used to integrate real-time domain knowledge into LLM models, bridging the gap between static training data and dynamic real-world information."
+  - question: "How does the Chroma vector database work with LLM?"
+    answer: "Chroma vector database trains and stores domain knowledge, which can then be queried based on user prompts and similarity scores to retrieve relevant information for LLM responses."
+  - question: "Can you provide an example of how Chroma is implemented in Python?"
+    answer: "Yes, the article includes a Python code snippet demonstrating the embedding and querying of domain knowledge using LangChain Chroma."
+  - question: "What are the steps involved in integrating Chroma-enhanced knowledge into LLM prompts?"
+    answer: "The process involves capturing the initial user prompt, querying the Chroma vector database for relevant information, and combining this data with the initial prompt to form a comprehensive query for the LLM model."
 ---
 
 

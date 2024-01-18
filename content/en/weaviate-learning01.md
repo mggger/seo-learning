@@ -5,6 +5,7 @@ date: 2023-07-07
 tags: ["Weaviate", "Vector Database", "OpenAI", "Semantic Search", "AI Learning"]
 categories: ["AI", "OPENAI"]
 draft: false
+toc: true
 faq:
   - question: "What is Weaviate?"
     answer: "Weaviate is a cloud-native, modular, real-time vector database built for scale. It integrates seamlessly with machine learning models, like OpenAI embeddings, to provide accurate semantic search capabilities."

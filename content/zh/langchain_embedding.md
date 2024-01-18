@@ -5,6 +5,7 @@ draft: false
 description: "通过LangChain和Chroma向量数据库，加强LLM模型的实时领域知识，提高其响应的准确性和实用性。"
 categories: ["langchain", "chatgpt"]
 tags: ["LangChain", "Chroma", "Vector Database", "AI"]
+toc: true
 faq:
   - question: "什么是LangChain向量数据库？"
     answer: "LangChain向量数据库是一种用于存储和检索文档信息的技术，它能够提升LLM模型的实时领域知识处理能力。"

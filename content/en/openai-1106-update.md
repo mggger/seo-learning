@@ -6,6 +6,7 @@ description: "Explore the revolutionary updates from OpenAI's Python SDK 1.0.0, 
 categories: ["chatgpt", "OpenAI", "AI"]
 tags: ["OpenAI", "AI", "GPT-4", "Python SDK", "Multi-Modal AI"]
 keywords: ["OpenAI updates", "GPT-4 Vision", "chatgpt JSON mode", "chatgpt system fingerprint"]
+toc: true
 ---
 
 ## Introduction: Embracing the Future with OpenAI's Updates

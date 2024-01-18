@@ -5,6 +5,7 @@ draft: false
 description: "Learn how to ensure hyperlinks in GPT-generated content are clickable, boosting user interaction and SEO rankings."
 categories: ["chatgpt", "GPTs", "Technical Solutions"]
 tags: ["GPTs", "AI", "Hyperlinks", "Troubleshooting"]
+toc: true
 faq:
   - question: "How can I make hyperlinks in GPT-generated content clickable?"
     answer: "To make hyperlinks clickable in GPT-generated content, you can use a simple prompt-based approach for limited recommendations, maintain a CSV file with element names and URLs for extensive recommendations, or integrate with GPTs action for dynamic fetching of relevant links."

@@ -5,6 +5,7 @@ draft: false
 categories: ["tech"]
 tags: ["chatgpt", "anki", "chrome extension"]
 language: zh
+toc: true
 ---
 
 通过记忆软件Anki，有效地组织和记忆零散的信息, 它使用分散重复的方法来帮助我们回忆。然而，创建Anki卡片的过程可能非常耗时。

@@ -6,7 +6,7 @@ description: "本文指导您如何利用Cloudflare的免费服务，包括Cloud
 categories: ["cloud-computing", "ai"]
 tags: ["Cloudflare", "免费AI应用", "Cloudflare AI", "Cloudflare Worker", "Cloudflare Page", "javascript"]
 keywords: ["Cloudflare", "AI应用", "免费", "Cloudflare Worker", "Cloudflare Page", "JavaScript", "API", "HTTPS"]
-
+toc: true
 ---
 
 

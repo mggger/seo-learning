@@ -4,6 +4,7 @@ date: 2023-08-07
 draft: false
 categories: ["Security"]
 tags: ["nginx", "ssl", "https", "free ssl", "let's encrypt", "ssl configuration"]
+toc: true
 faq:
   - question: How can I add a free SSL certificate to my Nginx server?
     answer: You can add a free SSL certificate to your Nginx server by using Let's Encrypt. Install Certbot and its Nginx plugin, generate and install the certificate, and let Certbot automatically configure your Nginx server for HTTPS.

@@ -3,6 +3,7 @@ title: "How to Make Anki Cards: A Step-by-Step Guide"
 date: 2024-01-18
 tags: ["Anki", "Study Tools", "Education Technology"]
 description: "Learn how to create effective Anki flashcards for enhanced learning and retention."
+toc: true
 faq:
   - question: "How do I add images to Anki cards?"
     answer: "To add an image, click the 'Attach' button in the card editor and select your image. Anki will handle the rest."

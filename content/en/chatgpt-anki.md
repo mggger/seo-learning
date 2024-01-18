@@ -4,6 +4,7 @@ date: 2023-07-06
 draft: false
 categories: ["tech", "education", "productivity tools"]
 tags: ["chatgpt", "anki", "chrome extension", "flash card creator", "anki card generator", "ai flashcard maker", "study tools"]
+toc: true
 ---
 
 # How to Create Anki Cards Efficiently with a ChatGPT-Based Chrome Extension

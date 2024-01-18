@@ -5,6 +5,7 @@ draft: false
 description: "学习如何实现Apache Hive的`ROW FORMAT SERDE`机制"
 categories: ["bigdata", "hive"]
 tags: ["Apache Hive"]
+toc: true
 ---
 
 # Apache Hive实现自定义存储格式

@@ -6,6 +6,7 @@ description: "Learn to harness Cloudflare's complimentary offerings, such as AI 
 categories: ["cloud-computing", "ai"]
 tags: ["Cloudflare", "Free AI Application", "Cloudflare AI", "Cloudflare Worker", "Cloudflare Page", "javascript"]
 keywords: ["Cloudflare", "AI Application", "Free", "Cloudflare Worker", "Cloudflare Page", "JavaScript", "API", "HTTPS", "AI GPU", "Chat GPU", "Run AI", "AI Inference", "GPU AI", "GPU and AI", "Inference AI", "Serverless GPU", "Cloudflare AI", "Cloudflare AI Workers", "Free GPU", "Get Inference AI Radar", "AI Worker", "Full Throttle AI", "GPU Pricing", "Huggingface Pricing", "Meta AI Blog", "Powered Models", "AI Running", "Cloudflare Workers AI", "Inferential中文", "Run.ai", "Nvidia Flare", "What is Inference in AI", "AI and GPU", "AI Neuron", "AI Workers", "Nvidia Workers", "NvidiaAI", "AI GPUs", "AI Inferences", "AI Staff", "Chat GPU AI", "GPU Machine", "Inferences中文", "Workers AI", "Cloudflare Worker Price", "CUDA GPT", "Edge GPU", "Hosted GPU", "Running AI", "Serverless Machine Learning", "What is AI Inferencing", "Cloud Inference", "GBT Zero AI", "Get Inference AI", "GPU Locations", "How the World Runs and Your Part in It", "Inference Service", "Inferencing AI", "Serverless GPUs", "Serverless Inference", "Zero Work .ai"]
+toc: true
 faq:
   - question: "How can I start building an AI application with Cloudflare?"
     answer: "Start by setting up a Cloudflare account, then explore and test the AI models offered by Cloudflare AI using your account details."

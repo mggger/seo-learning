@@ -5,6 +5,7 @@ draft: false
 description: 通过promtp，来给GPTs添加带货功能
 categories: ["chatgpt", "GPTs"]
 tags: ["GPTs", "AI"]
+toc: true
 ---
 
 ## 给GPTs添加带货功能

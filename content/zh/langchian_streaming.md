@@ -5,6 +5,7 @@ draft: false
 description: 如何对Langchain LLM返回的token进行实时处理
 categories: ["langchain", "chatgpt"]
 tags: ["LangChain", "AI"]
+toc: true
 ---
 
 # Langchain LLM Streaming 

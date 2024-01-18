@@ -6,6 +6,7 @@ keywords: ["Weaviate", "Vector Database", "OpenAI", "Semantic Search", "AI Learn
 categories: ["ai-learning"]
 draft: false
 language: zh
+toc: true
 ---
 
 # 向量数据库：Weaviate

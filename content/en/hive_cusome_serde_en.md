@@ -5,6 +5,7 @@ draft: false
 description: "Learn how to implement the `ROW FORMAT SERDE` mechanism in Apache Hive"
 categories: ["bigdata", "hive"]
 tags: ["Apache Hive"]
+toc: true
 ---
 
 # Implementing Custom Storage Formats in Apache Hive

@@ -1,28 +1,33 @@
 ---
-title: "Building a Zero-Cost AI Application Using Cloudflare"
+title: "How to build a Zero-Cost AI Application Using Cloudflare"
 date: 2023-11-30
 draft: false
 description: "This article guides you on how to leverage Cloudflare's free services, including Cloudflare AI, Worker, and Page, to build a completely free AI application."
 categories: ["cloud-computing", "ai"]
 tags: ["Cloudflare", "Free AI Application", "Cloudflare AI", "Cloudflare Worker", "Cloudflare Page", "javascript"]
 keywords: ["Cloudflare", "AI Application", "Free", "Cloudflare Worker", "Cloudflare Page", "JavaScript", "API", "HTTPS"]
-
+faq:
+  - question: "How can I start building an AI application with Cloudflare?"
+    answer: "Start by setting up a Cloudflare account, then explore and test the AI models offered by Cloudflare AI using your account details."
+  - question: "What are the steps to handle CORS issues in Cloudflare?"
+    answer: "Use a Cloudflare Worker script to manage CORS and forward AI model requests. This ensures seamless interaction between your application's frontend and backend."
+  - question: "Can I link my AI application's frontend to GitHub using Cloudflare Page?"
+    answer: "Yes, Cloudflare Page allows you to link your frontend interface with a GitHub project, facilitating easy updates and version control."
 ---
 
-# Building a Zero-Cost AI Application: Leveraging the Power of Cloudflare
+# How to build a Zero-Cost AI Application: A Step-by-Step Guide Using Cloudflare
 
-In the current tech landscape, using Cloudflare's free plan allows for the easy construction of zero-cost AI applications. This article will guide you on how to achieve this solely by using JavaScript and a few key services of Cloudflare—Cloudflare AI, Cloudflare Worker, and Cloudflare Page. Here, Cloudflare Worker acts as the backend service, while Cloudflare Page serves as the frontend.
+Discover how to leverage Cloudflare's free plan for constructing AI applications at no cost. This guide details using JavaScript and Cloudflare’s services such as Cloudflare AI, Worker, and Page to build an efficient AI application.
 
-## Preliminary Steps
 
-To start this project, you first need to:
+## Getting Started with Cloudflare for AI Applications
 
-1. Register and activate a Cloudflare account.
-2. Obtain necessary authentication information from your domain dashboard, including `Account ID`, and [API Token](https://dash.cloudflare.com/profile/api-tokens).
+### Step 1: Setting Up Your Cloudflare Account
+Begin by [registering and activating a Cloudflare account](https://dash.cloudflare.com/sign-up). Once set up, access your domain dashboard to obtain crucial authentication details like `Account ID`, and an [API Token](https://dash.cloudflare.com/profile/api-tokens).
 
-## Cloudflare AI
+### Step 2: Exploring Cloudflare AI
 
-Cloudflare AI currently supports a variety of models for free:
+Cloudflare AI offers a range of free models suitable for various AI applications:
 
 - @cf/baai/bge-base-en-v1.5
 - @cf/baai/bge-large-en-v1.5
@@ -36,7 +41,7 @@ Cloudflare AI currently supports a variety of models for free:
 - @cf/openai/whisper
 - @cf/stabilityai/stable-diffusion-xl-base-1.0
 
-You can quickly test these models with the following command line example, combined with the previously obtained `ACCOUNT_ID` and `API_TOKEN`:
+Test these models using the command line with your `ACCOUNT_ID` and `API_TOKEN`:
 
 ```shell
 curl -X POST \
@@ -45,9 +50,9 @@ curl -X POST \
   -d '{"messages":[{"role":"system","content":"You are a friendly assistant that helps write stories"},{"role":"user","content":"Write a short story about a llama that goes on a journey to find an orange cloud"}]}'
 ```
 
-## Cloudflare Worker: Handling CORS
+###  Overcoming CORS Challenges
 
-Since using Cloudflare Page might encounter Cross-Origin Resource Sharing (CORS) issues, you can resolve this by building a service through Cloudflare Worker, instead of directly calling the Cloudflare AI API. Below is a basic Cloudflare Worker script for handling CORS and forwarding AI model requests:
+When using Cloudflare Page, you might face Cross-Origin Resource Sharing (CORS) issues. A Cloudflare Worker script can handle CORS and forward AI model requests efficiently:
 
 ```js
 addEventListener('fetch', event => {
@@ -103,10 +108,11 @@ async function handleChatGPTRequest(request) {
 
 ![cloud](/img/cloudflare.png)
 
-## Cloudflare Page: Frontend Interface
+### Designing the Frontend with Cloudflare Page
 
-Cloudflare Page, serving as the frontend, is responsible for page construction and user interaction. You can design the AI application interface according to your personal aesthetics, and it can be directly linked with a GitHub project. For more information, please refer to the [Getting Started Guide for Cloudflare Pages](https://developers.cloudflare.com/pages/get-started/guide/).
+Cloudflare Page acts as the frontend interface. Design your AI application's user interface tailored to your aesthetic preferences. Cloudflare Page can be linked with a GitHub project for seamless updates. For detailed instructions, check out the [Getting Started Guide for Cloudflare Pages](https://developers.cloudflare.com/pages/get-started/guide/).
 
-## Conclusion
+
+## Conclusion: Launching Your Free AI Application
 
 Following the above steps, you can build a free AI application, such as the one I built, [FreeChat](https://freechat.mggg.cloud/), which includes image and text generation capabilities and dialogue models.

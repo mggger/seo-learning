@@ -1,34 +1,40 @@
 ---
-title: "Creating Anki Cards using ChatGPT-based Chrome Extension"
+title: "How to Create Anki Cards Efficiently with a ChatGPT-Based Chrome Extension"
 date: 2023-07-06
 draft: false
 categories: ["tech"]
 tags: ["chatgpt", "anki", "chrome extension"]
-images:
-- /img/anki-main.png
 ---
 
-The vast expanse of the internet serves us with nuggets of valuable information every day. But how do we effectively organize and memorize this fragmented information? One solution is the memory software, Anki, which uses the method of spaced repetition to aid our recall. However, the process of creating Anki cards can be quite time-consuming. To tackle this, we have developed a Chrome extension tool based on ChatGPT, aiding you in quickly and efficiently creating Anki cards.
+# How to Create Anki Cards Efficiently with a ChatGPT-Based Chrome Extension
+Harness the power of ChatGPT and streamline your learning process by creating Anki cards with a Chrome extension. This guide will walk you through the steps to use this innovative tool, perfect for organizing and memorizing information from the internet.
 
-The inception of this Chrome extension tool lies in two essential needs:
+![anki-chatgpt](/img/anki-chatgpt.png)
 
-1. When surfing online, the need to collect valuable fragmented information and employ ChatGPT to organize it into Anki cards.
-2. The necessity of studying for exams/certifications or memorizing standard answers for interviews.
+## Understanding the Need for a ChatGPT Chrome Extension
+With the abundance of information available online, organizing and memorizing it can be challenging. Anki, a popular memory software that employs spaced repetition, is a great solution. However, creating Anki cards can be time-consuming. This is where our [ChatGPT-based Chrome extension](https://github.com/mggger/chatgpt-anki-chrome-extension) comes in, simplifying the process significantly.
 
-## How to Use the ChatGPT-based Chrome Extension to Create Anki Cards
+## Step-by-Step Guide to Using the ChatGPT Chrome Extension for Anki Cards
 
-1. Install the Chrome extension through the zip package: [Download Link](https://github.com/mggger/chatgpt-anki-chrome-extension/files/11913090/v0.1.zip).
+### Step 1: Install the Extension
 
-2. Set up the relevant configurations and save them.
+Download and install the Chrome extension from the provided [Download Link](https://github.com/mggger/chatgpt-anki-chrome-extension/files/11913090/v0.1.zip). This extension is designed to work seamlessly with your browser, enhancing your browsing and study experience.
+
+### Step 2: Configure the Extension
+After installation, set up the necessary configurations for optimal performance. Save these settings to ensure the extension works according to your preferences.
 
    ![Configuration Image](/img/config.png)
 
-3. When you come across points of interest, select the text and use ChatGPT to summarize it into an Anki card.
+### Step 3: Create Anki Cards
+As you browse, select text that you find valuable. Use the extension's ChatGPT feature to summarize and convert this information into Anki cards.
 
    ![Selection Image](/img/select.png)
 
-4. Once done, you can start revising it in Anki.
+### Step 4: Review with Anki
+Transfer the created cards to Anki and start your revision process. The extension makes it easy to integrate these cards into your existing Anki decks.
 
    ![Anki Image](/img/anki.png)
 
-The ChatGPT-based Chrome extension not only helps you save time on creating Anki cards but also makes your study process more efficient. Download this extension now and embark on your journey to efficient learning!
+## Conclusion: Enhance Your Study with the ChatGPT Chrome Extension
+Download the extension today and take a step towards smarter learning!
+

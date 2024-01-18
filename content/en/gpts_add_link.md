@@ -14,6 +14,8 @@ faq:
 
 In the ever-evolving world of AI and custom GPT (Generative Pre-trained Transformer) applications, a common hurdle that developers and content creators face is making hyperlinks clickable in the generated text. This blog post explores an effective solution to this issue, enhancing user interaction and ensuring a smoother experience.
 
+![gpts_add_link](/img/gpts_add_link.png)
+
 ## The Challenge with Hyperlinks in GPT-Generated Content
 
 When GPTs generate text that includes URLs, these hyperlinks are not always automatically clickable. This can lead to a less engaging user experience, as readers might have to copy and paste URLs into their browsers manually. In the context of web content, user engagement and convenience are paramount, making this a significant issue to address.
@@ -47,10 +49,10 @@ Recently, I developed a custom GPT solution that tackles this issue. Here's a br
 
 Incorporating internal links relevant to AI, GPTs, and technology enhances the depth and SEO value of this post. Here are some handpicked resources:
 
-- [Exploring AI Trends](http://mggg.cloud/tags/ai/)
-- [Discovering the World of ChatGPT](http://mggg.cloud/categories/chatgpt/)
-- [Leveraging Cloudflare for AI Applications](http://mggg.cloud/en/cloudflare_free_ai/)
-- [Understanding Real-Time Processing in Langchain](http://mggg.cloud/en/langchian_streaming/)
+- [Exploring AI Trends](/tags/ai/)
+- [Discovering the World of ChatGPT](/categories/chatgpt/)
+- [Leveraging Cloudflare for AI Applications](/en/cloudflare_free_ai/)
+- [Understanding Real-Time Processing in Langchain](/en/langchian_streaming/)
 
 ## Conclusion
 

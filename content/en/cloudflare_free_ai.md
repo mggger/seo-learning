@@ -1,11 +1,11 @@
 ---
-title: "How to build a Zero-Cost AI Application Using Cloudflare"
+title: "How to Build a Zero-Cost AI Application Using Cloudflare"
 date: 2023-11-30
 draft: false
-description: "This article guides you on how to leverage Cloudflare's free services, including Cloudflare AI, Worker, and Page, to build a completely free AI application."
+description: "Learn to harness Cloudflare's complimentary offerings, such as AI Workers and Cloudflare Pages, to develop a cost-free AI application with powerful AI GPU capabilities."
 categories: ["cloud-computing", "ai"]
 tags: ["Cloudflare", "Free AI Application", "Cloudflare AI", "Cloudflare Worker", "Cloudflare Page", "javascript"]
-keywords: ["Cloudflare", "AI Application", "Free", "Cloudflare Worker", "Cloudflare Page", "JavaScript", "API", "HTTPS"]
+keywords: ["Cloudflare", "AI Application", "Free", "Cloudflare Worker", "Cloudflare Page", "JavaScript", "API", "HTTPS", "AI GPU", "Chat GPU", "Run AI", "AI Inference", "GPU AI", "GPU and AI", "Inference AI", "Serverless GPU", "Cloudflare AI", "Cloudflare AI Workers", "Free GPU", "Get Inference AI Radar", "AI Worker", "Full Throttle AI", "GPU Pricing", "Huggingface Pricing", "Meta AI Blog", "Powered Models", "AI Running", "Cloudflare Workers AI", "Inferential中文", "Run.ai", "Nvidia Flare", "What is Inference in AI", "AI and GPU", "AI Neuron", "AI Workers", "Nvidia Workers", "NvidiaAI", "AI GPUs", "AI Inferences", "AI Staff", "Chat GPU AI", "GPU Machine", "Inferences中文", "Workers AI", "Cloudflare Worker Price", "CUDA GPT", "Edge GPU", "Hosted GPU", "Running AI", "Serverless Machine Learning", "What is AI Inferencing", "Cloud Inference", "GBT Zero AI", "Get Inference AI", "GPU Locations", "How the World Runs and Your Part in It", "Inference Service", "Inferencing AI", "Serverless GPUs", "Serverless Inference", "Zero Work .ai"]
 faq:
   - question: "How can I start building an AI application with Cloudflare?"
     answer: "Start by setting up a Cloudflare account, then explore and test the AI models offered by Cloudflare AI using your account details."
@@ -15,19 +15,26 @@ faq:
     answer: "Yes, Cloudflare Page allows you to link your frontend interface with a GitHub project, facilitating easy updates and version control."
 ---
 
-# How to build a Zero-Cost AI Application: A Step-by-Step Guide Using Cloudflare
 
-Discover how to leverage Cloudflare's free plan for constructing AI applications at no cost. This guide details using JavaScript and Cloudflare’s services such as Cloudflare AI, Worker, and Page to build an efficient AI application.
+# How to Build a Zero-Cost AI Application: A Step-by-Step Guide Using Cloudflare
+
+Harness the power of Cloudflare's free tier to construct AI applications without incurring costs. This guide delineates the process of employing JavaScript along with Cloudflare's suite of services—including AI inference engines and Cloudflare Workers—to craft a robust, serverless AI application.
+
+![cloudflare_ai](/img/cloudflare_ai.png)
+
+## Step-by-Step Configuration for AI Deployment on Cloudflare
 
 
-## Getting Started with Cloudflare for AI Applications
+### Step 1: Initiate with Cloudflare Account Configuration
 
-### Step 1: Setting Up Your Cloudflare Account
-Begin by [registering and activating a Cloudflare account](https://dash.cloudflare.com/sign-up). Once set up, access your domain dashboard to obtain crucial authentication details like `Account ID`, and an [API Token](https://dash.cloudflare.com/profile/api-tokens).
+Kickstart your journey by [setting up your Cloudflare account](https://dash.cloudflare.com/sign-up). Post setup, navigate through your domain's dashboard to retrieve essential credentials such as `Account ID`, and secure an [API Token](https://dash.cloudflare.com/profile/api-tokens) for your AI inferences.
 
-### Step 2: Exploring Cloudflare AI
 
-Cloudflare AI offers a range of free models suitable for various AI applications:
+### Step 2: Tap into Cloudflare AI's Potential
+
+Embrace the diverse, free models that Cloudflare AI presents, catering to a variety of GPU AI tasks and inference AI needs:
+
+**List of AI models:**
 
 - @cf/baai/bge-base-en-v1.5
 - @cf/baai/bge-large-en-v1.5
@@ -41,7 +48,8 @@ Cloudflare AI offers a range of free models suitable for various AI applications
 - @cf/openai/whisper
 - @cf/stabilityai/stable-diffusion-xl-base-1.0
 
-Test these models using the command line with your `ACCOUNT_ID` and `API_TOKEN`:
+Deploy these models using your terminal, substituting `ACCOUNT_ID` and `API_TOKEN` with your specific details:
+
 
 ```shell
 curl -X POST \
@@ -50,9 +58,12 @@ curl -X POST \
   -d '{"messages":[{"role":"system","content":"You are a friendly assistant that helps write stories"},{"role":"user","content":"Write a short story about a llama that goes on a journey to find an orange cloud"}]}'
 ```
 
-###  Overcoming CORS Challenges
+###  Step 3: Navigate CORS with Cloudflare Workers
 
-When using Cloudflare Page, you might face Cross-Origin Resource Sharing (CORS) issues. A Cloudflare Worker script can handle CORS and forward AI model requests efficiently:
+
+To mitigate CORS issues when using Cloudflare Page, deploy a Cloudflare Worker script to orchestrate CORS and relay AI model queries effectively:
+
+
 
 ```js
 addEventListener('fetch', event => {
@@ -102,17 +113,20 @@ async function handleChatGPTRequest(request) {
 }
 ```
 
-1. Upload this script to your Cloudflare Worker.
-2. Configure `ACCOUNT_ID` and `BEARER_TOKEN` in the Worker settings (Settings -> Variables).
-3. Test your Worker: click Quick Edit, and directly use Cloudflare's built-in functionality for testing.
+- Upload the script to your Cloudflare Worker.
+- Amend `ACCOUNT_ID` and `BEARER_TOKEN` within your Worker's configurations.
+- Validate your Worker: utilize Cloudflare's test feature for immediate results.
+
 
 ![cloud](/img/cloudflare.png)
 
-### Designing the Frontend with Cloudflare Page
-
-Cloudflare Page acts as the frontend interface. Design your AI application's user interface tailored to your aesthetic preferences. Cloudflare Page can be linked with a GitHub project for seamless updates. For detailed instructions, check out the [Getting Started Guide for Cloudflare Pages](https://developers.cloudflare.com/pages/get-started/guide/).
+### Step 4: Designing Your AI Interface with Cloudflare Page
 
 
-## Conclusion: Launching Your Free AI Application
+Utilize Cloudflare Page to construct the frontend. Integrate it with GitHub to streamline updates and manage your AI application's interface, which is now ready to perform tasks like AI running, inference, and chat GPU operations.
 
-Following the above steps, you can build a free AI application, such as the one I built, [FreeChat](https://freechat.mggg.cloud/), which includes image and text generation capabilities and dialogue models.
+
+
+
+## Wrapping Up: Deploy Your Serverless GPU AI Application
+By adhering to the aforementioned steps, your cost-free AI application, akin to [FreeChat](https://freechat.mggg.cloud/)—equipped with image and text generation, along with dialogue models—is ready to go full throttle on AI. With Cloudflare's AI neuron at its core, your app can now perform at the edge of technological advancement, all the while being kind to your budget.

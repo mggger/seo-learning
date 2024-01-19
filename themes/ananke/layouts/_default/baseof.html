@@ -62,6 +62,33 @@
           ]
         }
     </script>
+    {{ else }}
+    <!-- Include structured data for articles only if there's no FAQ -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ .Title }}",
+    {{ if .Params.images }}
+    "image": [
+        {{ range $index, $image := .Params.images }}
+        "{{ $image }}"{{ if ne $index (sub (len $.Params.images) 1) }},{{ end }}
+        {{ end }}
+    ],
+    {{ end }}
+    "datePublished": "{{ .PublishDate.Format (default "2006-01-02T15:04:05Z07:00" .Site.Params.date_format) }}",
+    "dateModified": "{{ .Lastmod.Format (default "2006-01-02T15:04:05Z07:00" .Site.Params.date_format) }}",
+    "author": [
+        {{ range $index, $author := .Params.authors }}
+        {
+            "@type": "Person",
+            "name": "{{ $author.name }}",
+            "url": "{{ $author.url }}"
+        }{{ if ne $index (sub (len $.Params.authors) 1) }},{{ end }}
+        {{ end }}
+    ]
+}
+</script>
     {{ end }}
 
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}

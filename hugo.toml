@@ -1,4 +1,4 @@
-baseURL = 'http://mggg.cloud/'
+baseURL = 'https://mggg.cloud/'
 title = "mggg's Blog"
 theme = 'ananke'
 [params]

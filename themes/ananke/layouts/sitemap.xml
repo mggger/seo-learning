@@ -1,4 +1,4 @@
-{{- $pages := .Pages -}}
+{{- $pages := where .Site.RegularPages "Type" "not in" (slice "categories" "tags") -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{- range $pages }}
   <url>

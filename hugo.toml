@@ -21,6 +21,12 @@ name = "twitter"
 url = "https://twitter.com/wangjm10"
 
 [[menu.main]]
+identifier = "aboutme"
+name = "About Me"
+url = "/en/about-me/"
+weight = 2
+
+[[menu.main]]
   name = "Links"
   url = "/friends"
   weight = 5

@@ -104,6 +104,8 @@ print(response)
 
 
 
+## 其他
+[Embed](https://gptdevelopment.online/): 在线训练您的 PDF、URL 和纯文本，并将它们通过api与RAG聊天机器人集成。
 
 
 

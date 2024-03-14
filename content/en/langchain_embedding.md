@@ -137,3 +137,6 @@ print(llm(messages))
 ## Conclusion
 
 Integrating LangChain Chroma into LLM models like ChatGPT effectively bridges the gap between static training data and dynamic real-world information. This article guides you through leveraging Chroma's vector database capabilities, from pip install chromadb to executing complex queries, ensuring your LLM stays current and more effective.
+
+## Explore more
+[Embed](https://gptdevelopment.online/): Train your PDFs, URLs, and plain text online and integrate them with RAG chatbot using an API.

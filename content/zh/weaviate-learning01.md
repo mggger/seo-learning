@@ -26,7 +26,7 @@ Weaviate是一个创新的向量数据库，提供了强大的数据存储和检
 version: '3.4'
 services:
   weaviate:
-    image: semitechnologies/weaviate:1.20.0
+    image: cr.weaviate.io/semitechnologies/weaviate:1.20.0
     restart: on-failure:0
     ports:
      - "8080:8080"

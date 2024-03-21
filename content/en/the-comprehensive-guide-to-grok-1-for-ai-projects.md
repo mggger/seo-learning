@@ -1,6 +1,6 @@
 ---
 title: "Guide to Using Grok-1 for AI Projects: Features, Setup, and Pricing"
-date: 2024-03-18
+date: 2024-03-20
 description: "Discover how to utilize the Grok-1 AI model for your projects, including its key features, how to set it up, and its cost. This guide simplifies the process, catering to both beginners and experienced developers."
 categories:
   - AI Development

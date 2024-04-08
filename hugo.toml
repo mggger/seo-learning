@@ -1,8 +1,10 @@
 baseURL = 'https://mggg.cloud/'
 title = "mggg's Blog"
+
 theme = 'ananke'
 [params]
 author = "mggg"
+description = "mggg is the ID I use when playing Dota. Currently, I am very interested in AI, and this is my blog, so I called mggg's blog"
 favicon= "img/favicon.ico"
 background_color_class=""
 github="https://github.com/mggger"

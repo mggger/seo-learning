@@ -37,8 +37,12 @@ url = "https://twitter.com/wangjm10"
   url = "/zh/"
   weight = 4
 
-
 [[menu.main]]
   name = "GPTs"
   url = "https://gptdevelopment.online/"
+  weight = 0
+
+[[menu.main]]
+  name = "Free AI Chat"
+  url = "https://roleai.chat/"
   weight = 0

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王家敏 - 简历</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#ccfbf1",
+                        accent: "#60A5FA",
+                        neutral: "#4B5563",
+                        "base-100": "#F3F4F6",
+                        "base-200": "#E5E7EB",
+                        "base-300": "#D1D5DB",
+                    },
+                },
+            },
+            daisyui: {
+                themes: [
+                    {
+                        cupcake: {
+                            ...require("daisyui/src/theming/themes")["[data-theme=cupcake]"],
+                            primary: "#ccfbf1",
+                            secondary: "#ccfbf1",
+                            accent: "#60A5FA",
+                            neutral: "#4B5563",
+                            "base-100": "#F3F4F6",
+                            "base-200": "#E5E7EB",
+                            "base-300": "#D1D5DB",
+                        },
+                    },
+                ],
+            },
+        }
+    </script>
+</head>
+<body class="bg-base-200">
+    <div class="container mx-auto p-4 md:p-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <header class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-[#115e59]">王家敏</h1>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="mailto:mggis0or1@gmail.com" class="btn btn-sm btn-outline btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            邮箱
+                        </a>
+                        <a href="https://github.com/mggger" class="btn btn-sm btn-outline btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://mggg.cloud/" class="btn btn-sm btn-outline btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            博客
+                        </a>
+                    </div>
+                </header>
+
+
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary">认证与教育</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-base-200 p-4 rounded-lg">
+                            <h3 class="font-semibold text-[#115e59]">认证</h3>
+                            <ul class="list-disc list-inside text-neutral">
+                                <li>Kubernetes应用开发者认证</li>
+                                <li>Google Cloud认证 - 专业数据工程师</li>
+                            </ul>
+                        </div>
+                        <div class="bg-base-200 p-4 rounded-lg">
+                            <h3 class="font-semibold text-[#115e59]">教育背景</h3>
+                            <p class="text-neutral">湖北汉口学院</p>
+                            <p class="text-neutral">电子信息工程，学士学位</p>
+                            <p class="text-neutral">2017年毕业</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary">开源项目与竞赛经历</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-base-200 p-4 rounded-lg">
+                            <ul class="space-y-2">
+                                <li class="space-y-1">
+                                    <a href="https://github.com/mem0ai/mem0" class="font-medium text-[#115e59] hover:underline">mem0ai/mem0</a>
+                                    <p class="text-sm text-neutral">mem0是一个开源的个人知识管理工具，旨在帮助用户组织和检索信息。我完善了关于chromadb高版本的集成</p>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/langchain-ai/langchainjs" class="font-medium text-[#115e59] hover:underline">langchain-ai/LangChain.js</a>
+                                    <p class="text-sm text-neutral">LangChain.js是一个用于构建基于语言模型的应用程序的JavaScript库， 改进了关于cloudflare + langchain-js文档</p>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/microsoft/graphrag" class="font-medium text-[#115e59] hover:underline">microsoft/GraphRAG</a>
+                                    <p class="text-sm text-neutral">GraphRAG是微软开发的一个基于图的检索增强生成（RAG）系统。完善了相关文档，并贡献了claude LLM实现</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-base-200 p-4 rounded-lg">
+                            <h3 class="font-semibold text-[#115e59] mb-3">竞赛</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#115e59] mr-2 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-[#115e59]">在阿里云天池Apache Flink极客挑战赛中排名 <strong class="text-[#115e59]">28/1416</strong></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#115e59] mr-2 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-[#115e59]">在阿里云天池海量数据云迁移挑战赛中排名 <strong class="text-[#115e59]">17/1301</strong></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#115e59] mr-2 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <span class="text-[#115e59]">专利：<strong class="text-[#115e59]">"一种基于akka框架的云原生日志收集方法和系统"</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary">技能栈</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-primary">Hadoop</span>
+                        <span class="badge badge-primary">Spark</span>
+                        <span class="badge badge-primary">Flink</span>
+                        <span class="badge badge-primary">Kubernetes</span>
+                        <span class="badge badge-primary">RAG</span>
+                        <span class="badge badge-primary">Langchain</span>
+                        <span class="badge badge-primary">Next.js</span>
+                        <span class="badge badge-primary">SEO</span>
+                        <span class="badge badge-primary">Cloudflare</span>
+                        <span class="badge badge-primary">AWS</span>
+                        <span class="badge badge-primary">JAVA</span>
+                        <span class="badge badge-primary">Python</span>
+                        <span class="badge badge-primary">JS</span>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary">专业概述</h2>
+                    <p class="text-neutral">
+                        拥有5年以上大数据开发经验的数据工程师，具备对Spark、Flink和Hive内核开发的能力。获得Google Cloud专业数据工程师认证。擅长云原生架构设计和实施，拥有CNCF CKAD认证。熟练使用AWS和Cloudflare产品。擅长RAG应用的架构设计，如GraphRAG，Self-RAG, 熟悉最先进的大型语言模型，包括OpenAI GPT、Google Gemini、LLaMA和Claude。
+                    </p>
+                </section>
+
+                <section class="container mx-auto">
+  <h2 class="text-3xl font-bold mb-8 text-primary">职业经历</h2>
+
+  <div class="space-y-12">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h3 class="card-title text-2xl text-primary">自由职业AI工程师</h3>
+        <p class="text-sm text-base-content/70 mb-4">2024.01 - 至今</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li>独立开发<a href="https://gptdevelopment.online/" class="link link-primary">Embed</a>：类AWS Bedrock的RAG聊天机器人在线服务
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li>支持在线训练多种数据源（PDF, Markdown, Docx等）</li>
+              <li>轻松集成OpenAI, Google Gemini, Llama3等多种LLM</li>
+            </ul>
+          </li>
+          <li>Upwork平台Top Rated AI开发者，100%工作成功率
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li><a href="https://graphrag-demo-jebg3fm3yvdwqow55ic9pa.streamlit.app/" class="link link-primary">GraphRAG聊天机器人</a>：使用GraphRAG架构的高质量问答系统</li>
+              <li><a href="https://filamentgenius.com/" class="link link-primary">电商产品推荐聊天机器人</a>：基于预定义问题的客户定制产品推荐</li>
+              <li><a href="https://abcb.pages.dev/" class="link link-primary">澳大利亚建筑法规聊天机器人</a>：根据用户询问提供相关标准和链接</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h3 class="card-title text-2xl text-primary">大数据团队负责人</h3>
+        <p class="text-sm text-base-content/70 mb-4">上海佳锐科技 | 2023.06 - 2023.12</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li>领导研发流程标准化，包括代码合并、版本管理和自动化部署</li>
+          <li>优化平台架构：
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li>将shell命令提交任务优化为通过源码方式提交</li>
+              <li>实现插件化设计，解耦平台与不同Hadoop环境的依赖</li>
+              <li>使用双亲委派机制，将各Hadoop依赖封闭在对应插件中</li>
+            </ul>
+          </li>
+          <li>功能迭代：
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li>为DataX添加分片Sharding JDBC数据源插件</li>
+              <li>为Flink CDC添加Oracle集群连接支持</li>
+              <li>为Spark、Flink和Hive任务添加Kerberos/Apache Ranger身份验证支持</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h3 class="card-title text-2xl text-primary">计算引擎开发工程师</h3>
+        <p class="text-sm text-base-content/70 mb-4">杭州袋鼠云 | 2021.10 - 2023.03</p>
+        <ul class="list-disc list-inside space-y-3">
+          <li>主导上海银联实时计算平台的Flink on Kubernetes解决方案：
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li>完成镜像构造、平台租户绑定、资源限制、任务提交、状态管理、日志获取全流程开发</li>
+              <li>现场交付整个项目，积累经验发表专利：《一种基于akka框架的云原生日志收集方法和系统》</li>
+            </ul>
+          </li>
+          <li>Spark内核研发：
+            <ul class="list-circle list-inside ml-6 mt-2">
+              <li>实现离线计算平台支持Hive UDF和Spark UDF的注册</li>
+              <li>开发Spark2.4在Kubernetes运行时的Kerberos认证支持</li>
+              <li>制作Spark Service ADP包，将Spark、Hive on S3容器化，使用阿里云ADP制作产品包</li>
+            </ul>
+          </li>
+          <li>为Flinkx数据集成框架开发FTP和Iceberg连接器，提高性能和兼容性</li>
+          <li>开发和维护开源Spark和Flink适配插件，支持星环TDH、华为MRS、FusionInsight、腾讯TBDS等环境</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h3 class="card-title text-2xl text-primary">早期职位</h3>
+        <p class="text-sm text-base-content/70 mb-4">2016 - 2021</p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>杭州米加健康 数据平台开发工程师 (2020.07 - 2021.10)</li>
+          <li>多家公司担任大数据开发工程师 (2016.11 - 2020.05)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

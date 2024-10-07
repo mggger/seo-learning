@@ -165,28 +165,61 @@
                 <section class="container mx-auto">
   <h2 class="text-3xl font-bold mb-8 text-primary">职业经历</h2>
 
-  <div class="space-y-12">
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h3 class="card-title text-2xl text-primary">自由职业AI工程师</h3>
-        <p class="text-sm text-base-content/70 mb-4">2024.01 - 至今</p>
-        <ul class="list-disc list-inside space-y-3">
-          <li>独立开发<a href="https://gptdevelopment.online/" class="link link-primary">Embed</a>：类AWS Bedrock的RAG聊天机器人在线服务
-            <ul class="list-circle list-inside ml-6 mt-2">
-              <li>支持在线训练多种数据源（PDF, Markdown, Docx等）</li>
-              <li>轻松集成OpenAI, Google Gemini, Llama3等多种LLM</li>
-            </ul>
-          </li>
-          <li>Upwork平台Top Rated AI开发者，100%工作成功率
-            <ul class="list-circle list-inside ml-6 mt-2">
-              <li><a href="https://graphrag-demo-jebg3fm3yvdwqow55ic9pa.streamlit.app/" class="link link-primary">GraphRAG聊天机器人</a>：使用GraphRAG架构的高质量问答系统</li>
-              <li><a href="https://filamentgenius.com/" class="link link-primary">电商产品推荐聊天机器人</a>：基于预定义问题的客户定制产品推荐</li>
-              <li><a href="https://abcb.pages.dev/" class="link link-primary">澳大利亚建筑法规聊天机器人</a>：根据用户询问提供相关标准和链接</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+  <div>
+    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+  <div class="card-body p-6">
+    <h3 class="card-title text-2xl text-primary font-bold mb-4">独立开发-AI工程师</h3>
+    <p class="text-sm text-base-content/70">2024.01 - 至今</p>
+
+    <ul>
+      <li class="p-5 rounded-lg shadow-sm">
+        <h4 class="font-semibold text-lg text-primary">
+          1. 独立开发<a href="https://gptdevelopment.online/" class="link link-primary hover:underline">Embed</a>：类AWS Bedrock的RAG聊天机器人SaaS
+        </h4>
+        <p class="text-sm mb-2">
+            支持在线训练多种数据源(PDF, Markdown, Docx等).轻松构建与分享RAG聊天机器人, 集成OpenAI, Google Gemini, Llama3等多种LLM.
+        </p>
+        <p class="text-sm">
+          采用serverless架构，使用next.js进行全栈开发， cloudflare D1进行关系型数据存储，cloudflare R2进行对象存储，AWS Lambda解析文件，训练为向量，存储在向量数据库pinecone
+        </p>
+      </li>
+
+      <li class="p-5 rounded-lg shadow-sm">
+        <h4 class="font-semibold text-lg text-primary">
+          2. <a href="https://abcb.pages.dev/" class="link link-primary hover:underline">澳大利亚建筑法规AI搜索引擎</a>
+        </h4>
+        <p class="mb-2 text-sm">
+          垂直AI搜索引擎，针对澳大利亚建筑法规， 根据用户的提问, 提供答案并附带信息源
+        </p>
+        <p class="text-sm">
+          采用serverless架构，使用next.js进行全栈开发， 提取pdf，网页数据，标注来源元数据，训练为向量存储在pinecone数据库中，使用openai gpt-4o-mini作为LLM
+        </p>
+      </li>
+
+      <li class="p-5 rounded-lg shadow-sm">
+        <h4 class="font-semibold text-lg text-primary">
+          3. <a href="https://teachgpt.streamlit.app/" class="link link-primary hover:underline">AI老师</a>
+        </h4>
+        <p class="text-sm">
+          使用GraphRAG架构构建的高质量回复聊天机器人，对学习过程中遇到的问题进行指导，并支持对作业进行检阅，评价
+        </p>
+      </li>
+
+      <li class="p-5 rounded-lg shadow-sm">
+        <h4 class="font-semibold text-lg text-primary">
+          4. <a href="https://filamentgenius.com/" class="link link-primary hover:underline">电商产品推荐聊天机器人</a>
+        </h4>
+        <p class="text-sm">
+          基于产品预定义问题， 为客户推荐定制产品
+        </p>
+      </li>
+    </ul>
+
+    <div class="bg-gradient-to-r from-accent/20 to-accent/30 p-5 rounded-lg shadow-inner">
+      <p class="text-accent-content">Upwork平台Top Rated AI开发者，100%工作成功率</p>
     </div>
+  </div>
+</div>
 
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body">
@@ -247,7 +280,7 @@
       </div>
     </div>
   </div>
-</section>
+    </section>
             </div>
         </div>
     </div>

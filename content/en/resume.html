@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="corporate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +8,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#3B82F6",
-                        secondary: "#ccfbf1",
-                        accent: "#60A5FA",
-                        neutral: "#4B5563",
-                        "base-100": "#F3F4F6",
-                        "base-200": "#E5E7EB",
-                        "base-300": "#D1D5DB",
-                    },
-                },
-            },
             daisyui: {
-                themes: ["light", "dark"],
+                themes: ["corporate", "business"],
             },
         }
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-base-200">
     <div class="container mx-auto p-4 md:p-8">
         <div class="card bg-base-100 shadow-xl">
             <div class="card-body">
-                <header class="text-center mb-8">
+                <header class="text-center mb-8 flex justify-between items-center">
                     <h1 class="text-5xl font-bold text-primary mb-4">Jiamin Wang</h1>
-                    <div class="flex justify-center space-x-4 mt-4">
-                        <a href="mailto:mggis0or1@gmail.com" class="btn btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            Email
-                        </a>
-                        <a href="https://github.com/mggger" class="btn btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://mggg.cloud/" class="btn btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                            </svg>
-                            Blog
-                        </a>
-                    </div>
+                    <label class="swap swap-rotate">
+                        <input type="checkbox" class="theme-controller" value="synthwave" />
+                        <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                        <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                    </label>
                 </header>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="mailto:mggis0or1@gmail.com" class="btn btn-primary btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/mggger" class="btn btn-primary btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://mggg.cloud/" class="btn btn-primary btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                        Blog
+                    </a>
+                </div>
 
                 <section class="mb-8">
                     <h2 class="text-3xl font-semibold mb-4 text-primary">Professional Summary</h2>
                     <div class="card bg-base-200 shadow-sm">
                         <div class="card-body">
-                            <p class="text-neutral">
+                            <p class="text-base-content">
                                 Data engineer with over 5 years of experience in big data development, capable of core development
                                 in Spark, Flink, and Hive. Certified Google Cloud Professional Data Engineer. Skilled in
                                 cloud-native architecture design and implementation, holding CNCF CKAD certification. Proficient in
@@ -76,8 +74,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-accent">Certifications</h3>
-                                <ul class="list-disc list-inside text-neutral">
+                                <h3 class="card-title text-secondary">Certifications</h3>
+                                <ul class="list-disc list-inside text-base-content">
                                     <li>Certified Kubernetes Application Developer</li>
                                     <li>Google Cloud Certified - Professional Data Engineer</li>
                                 </ul>
@@ -85,10 +83,10 @@
                         </div>
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-accent">Education</h3>
-                                <p class="text-neutral">Hubei Hankou University</p>
-                                <p class="text-neutral">Electronic Information Engineering, Bachelor's Degree</p>
-                                <p class="text-neutral">Graduated in 2017</p>
+                                <h3 class="card-title text-secondary">Education</h3>
+                                <p class="text-base-content">Hubei Hankou University</p>
+                                <p class="text-base-content">Electronic Information Engineering, Bachelor's Degree</p>
+                                <p class="text-base-content">Graduated in 2017</p>
                             </div>
                         </div>
                     </div>
@@ -99,19 +97,19 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-accent mb-4">Open Source Contributions</h3>
+                                <h3 class="card-title text-secondary mb-4">Open Source Contributions</h3>
                                 <ul class="space-y-4">
                                     <li>
                                         <a href="https://github.com/mem0ai/mem0" class="link link-primary font-medium">mem0ai/mem0</a>
-                                        <p class="text-sm text-neutral mt-1">Improved integration with higher versions of chromadb for this personal knowledge management tool.</p>
+                                        <p class="text-sm text-base-content mt-1">Improved integration with higher versions of chromadb for this personal knowledge management tool.</p>
                                     </li>
                                     <li>
                                         <a href="https://github.com/langchain-ai/langchainjs" class="link link-primary font-medium">langchain-ai/LangChain.js</a>
-                                        <p class="text-sm text-neutral mt-1">Improved documentation for Cloudflare + LangChain.js integration.</p>
+                                        <p class="text-sm text-base-content mt-1">Improved documentation for Cloudflare + LangChain.js integration.</p>
                                     </li>
                                     <li>
                                         <a href="https://github.com/microsoft/graphrag" class="link link-primary font-medium">microsoft/GraphRAG</a>
-                                        <p class="text-sm text-neutral mt-1">Improved documentation and contributed to the Claude LLM implementation.</p>
+                                        <p class="text-sm text-base-content mt-1">Improved documentation and contributed to the Claude LLM implementation.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -119,31 +117,30 @@
 
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-accent mb-4">Competitions & Achievements</h3>
+                                <h3 class="card-title text-secondary mb-4">Competitions & Achievements</h3>
                                 <ul class="space-y-4">
                                     <li class="flex items-start">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
-                                        <span class="text-neutral">Ranked <strong class="text-primary">28/1416</strong> in the Alibaba Cloud Tianchi Apache Flink Geek Challenge</span>
+                                        <span class="text-base-content">Ranked <strong class="text-accent">28/1416</strong> in the Alibaba Cloud Tianchi Apache Flink Geek Challenge</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span class="text-neutral">Ranked <strong class="text-primary">17/1301</strong> in the Alibaba Cloud Tianchi Massive Data Cloud Migration Challenge</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            </svg>
+                                        <span class="text-base-content">Ranked <strong class="text-accent">17/1301</strong> in the Alibaba Cloud Tianchi Massive Data Cloud Migration Challenge</span>
                                     </li>
                                     <li class="flex items-start">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                        <span class="text-neutral">Patent: <strong class="text-primary">"A cloud-native log collection method and system based on the Akka framework"</strong></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+                                        </svg>
+                                        <span class="text-base-content">Patent: <strong class="text-accent">"A cloud-native log collection method and system based on the Akka framework"</strong></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="mb-8">
                     <h2 class="text-3xl font-semibold mb-4 text-primary">Skill Stack</h2>
@@ -173,20 +170,20 @@
                     <div class="space-y-6">
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-2xl text-accent">Independent Developer - AI Engineer</h3>
-                                <p class="text-sm text-neutral mb-4">2024.01 - Present</p>
+                                <h3 class="card-title text-2xl text-secondary">Independent Developer - AI Engineer</h3>
+                                <p class="text-sm text-base-content mb-4">2024.01 - Present</p>
                                 <ul class="space-y-4">
                                     <li class="card bg-base-100 shadow-sm">
                                         <div class="card-body">
-                                            <h4 class="card-title text-primary">
+                                            <h4 class="card-title text-accent">
                                                 <a href="https://gptdevelopment.online/" class="link link-primary">Embed: AWS Bedrock-like RAG chatbot SaaS</a>
                                             </h4>
-                                            <p class="text-sm text-neutral">
+                                            <p class="text-sm text-base-content">
                                                 Supports online training of various data sources (PDF, Markdown, Docx, etc.).
                                                 Easily build and share RAG chatbots, integrating OpenAI, Google Gemini, Llama3,
                                                 and other LLMs.
                                             </p>
-                                            <p class="text-sm text-neutral">
+                                            <p class="text-sm text-base-content">
                                                 Adopted serverless architecture, using next.js for full-stack development,
                                                 Cloudflare D1 for relational data storage, Cloudflare R2 for object storage, AWS
                                                 Lambda for file parsing, training vectors, and storing them in the Pinecone
@@ -196,14 +193,14 @@
                                     </li>
                                     <li class="card bg-base-100 shadow-sm">
                                         <div class="card-body">
-                                            <h4 class="card-title text-primary">
+                                            <h4 class="card-title text-accent">
                                                 <a href="https://vove.ai/" class="link link-primary">Australian Building Regulations AI Search Engine</a>
                                             </h4>
-                                            <p class="text-sm text-neutral mb-2">
+                                            <p class="text-sm text-base-content mb-2">
                                                 Vertical AI search engine for Australian building Regulations, providing answers to
                                                 user queries with source information.
                                             </p>
-                                            <p class="text-sm text-neutral">
+                                            <p class="text-sm text-base-content">
                                                 Adopted serverless architecture, using next.js for full-stack development.
                                                 Extracted data from PDFs and web pages, annotated source metadata, trained
                                                 vectors stored in Pinecone database, using OpenAI GPT-4-mini as the LLM.
@@ -212,17 +209,17 @@
                                     </li>
                                     <li class="card bg-base-100 shadow-sm">
                                         <div class="card-body">
-                                            <h4 class="card-title text-primary">
+                                            <h4 class="card-title text-accent">
                                                 <a href="https://filamentgenius.com/" class="link link-primary">E-commerce Product Recommendation Chatbot</a>
                                             </h4>
-                                            <p class="text-sm text-neutral">
+                                            <p class="text-sm text-base-content">
                                                 Recommends customized products to customers based on predefined product
                                                 questions.
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="mt-4 p-4 bg-accent text-accent-content rounded-lg">
+                                <div class="mt-4 p-4 bg-accent bg-opacity-10 text-accent rounded-lg">
                                     <p class="font-semibold">Top Rated AI Developer on Upwork platform with 100% job success rate</p>
                                 </div>
                             </div>
@@ -230,9 +227,9 @@
 
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-2xl text-accent">Big Data Team Leader</h3>
-                                <p class="text-sm text-neutral mb-4">Shanghai Jiarui Technology | 2023.06 - 2023.12</p>
-                                <ul class="space-y-3 list-disc list-inside text-neutral">
+                                <h3 class="card-title text-2xl text-secondary">Big Data Team Leader</h3>
+                                <p class="text-sm text-base-content mb-4">Shanghai Jiarui Technology | 2023.06 - 2023.12</p>
+                                <ul class="space-y-3 list-disc list-inside text-base-content">
                                     <li>Led the standardization of development processes, including code merging, version
                                         management, and automated deployment
                                     </li>
@@ -262,9 +259,9 @@
 
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-2xl text-accent">Compute Engine Development Engineer</h3>
-                                <p class="text-sm text-neutral mb-4">Hangzhou Daishu Cloud | 2021.10 - 2023.03</p>
-                                <ul class="space-y-3 list-disc list-inside text-neutral">
+                                <h3 class="card-title text-2xl text-secondary">Compute Engine Development Engineer</h3>
+                                <p class="text-sm text-base-content mb-4">Hangzhou Daishu Cloud | 2021.10 - 2023.03</p>
+                                <ul class="space-y-3 list-disc list-inside text-base-content">
                                     <li>Led the Flink on Kubernetes solution for Shanghai UnionPay's real-time computing
                                         platform:
                                         <ul class="list-circle list-inside ml-6 mt-2">
@@ -303,9 +300,9 @@
 
                         <div class="card bg-base-200 shadow-sm">
                             <div class="card-body">
-                                <h3 class="card-title text-2xl text-accent">Early Career Positions</h3>
-                                <p class="text-sm text-neutral mb-4">2016 - 2021</p>
-                                <ul class="list-disc list-inside text-neutral">
+                                <h3 class="card-title text-2xl text-secondary">Early Career Positions</h3>
+                                <p class="text-sm text-base-content mb-4">2016 - 2021</p>
+                                <ul class="list-disc list-inside text-base-content">
                                     <li>Hangzhou Mijia Health, Data Platform Development Engineer (2020.07 - 2021.10)</li>
                                     <li>Big Data Development Engineer at various companies (2016.11 - 2020.05)</li>
                                 </ul>
@@ -316,5 +313,17 @@
             </div>
         </div>
     </div>
+    <script>
+        const themeController = document.querySelector('.theme-controller');
+        const htmlTag = document.documentElement;
+
+        themeController.addEventListener('change', function() {
+            if (this.checked) {
+                htmlTag.setAttribute('data-theme', 'business');
+            } else {
+                htmlTag.setAttribute('data-theme', 'corporate');
+            }
+        });
+    </script>
 </body>
 </html>
